@@ -102,8 +102,8 @@ export class ConfigService {
       id: 5,
       name: "services",
       data: {
-        title: "SUCCESS",
-        description: "How We Help You To Sell Your Product",
+        title: "BELIEVING",
+        description: "Focusing On What Matters Most",
         detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!",
       }
     },
@@ -112,9 +112,9 @@ export class ConfigService {
       name: "testimonials",
       data: {
         title: "FEEDBACK",
-        description: "What our customers are saying",
+        description: "What Our Customers Are Saying",
         detail: "",
-        feedbacks: [
+        feedbackBlock: [
           {
             "id": 1,
             "image": "/assets/images/user-images/user-1.jpg",
@@ -202,56 +202,55 @@ export class ConfigService {
         title: "Made with love by",
         url: "https://www.shapingrain.com",
         developer: "ShapingRain"
-    
+
       }
     },
     {
       id: 9,
       name: "social",
       data: {
-
         title: "socialicons",
         socialBlocks: [
 
           {
-            id: "",
+            id: 1,
             title: "Facebook",
-            target: "",
-            username: "facebook",
+            target: "_blank",
+            username: "sfami",
             url: "https://www.facebook.com/username",
-            icon: "fa-facebook",
+            icon: "facebook",
           },
           {
-            id: "",
+            id: 2,
             title: "Google+",
-            target: "",
-            username: "google-plus",
+            target: "_blank",
+            username: "sfami",
             url: "http://google.com/+username",
-            icon: "fa-google-plus",
+            icon: "google-plus",
           },
           {
-            id: "",
+            id: 3,
             title: "Twitter",
-            target: "",
-            username: "twitter",
+            target: "_blank",
+            username: "sfami",
             url: "http://www.twitter.com/username",
-            icon: "fa-twitter",
+            icon: "twitter",
           },
           {
-            id: "",
+            id: 4,
             title: "Instagram",
-            target: "",
-            username: "instagram",
+            target: "_blank",
+            username: "sfami",
             url: "http://www.instagram.com/username",
-            icon: "fa-instagram",
+            icon: "instagram",
           },
           {
-            id: "",
+            id: 5,
             title: "Behance",
-            target: "",
-            username: "behance",
+            target: "_blank",
+            username: "sfami",
             url: "http://www.behance.net",
-            icon: "fa-behance",
+            icon: "behance",
           }
         ]
       }
@@ -260,13 +259,13 @@ export class ConfigService {
   ]
 
   constructor() { }
-  
+
   getAllPages(): ConfigItem[] {
     return this.configuration;
   }
   getPageByName(pageName: string): ConfigItem | undefined {
     return this.configuration.find(configItem => configItem.name == pageName);
   }
-  
+
 
 }

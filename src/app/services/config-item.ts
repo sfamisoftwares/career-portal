@@ -24,7 +24,7 @@ export interface ConfigItem {
             url: string;
             name: string;
         }[];
-        feedbacks?: {
+        feedbackBlock?: {
             id: number;
             image: string;
             quote: string;
@@ -46,7 +46,7 @@ export interface ConfigItem {
             buttontext: string;
         }[];
         socialBlocks?: {
-            id: string;
+            id: number;
             title: string;
             target: string;
             username: string;

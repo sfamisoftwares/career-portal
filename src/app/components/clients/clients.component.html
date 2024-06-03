@@ -5,16 +5,16 @@
         <div class="col-3">
 
             <div class="section-heading">
-                <h3>{{clients.title}}</h3>
-                <h2 class="section-title">{{clients.description}}</h2>
-                <p class="section-subtitle">{{clients.detail}}</p>
+                <h3>{{clients?.data?.title}}</h3>
+                <h2 class="section-title">{{clients?.data?.description}}</h2>
+                <p class="section-subtitle">{{clients?.data?.detail}}</p>
             </div>
 
         </div>
 
         <div class="col-2-3">
             
-            @for (company of clients.companyBlocks; track company) {
+            @for (company of clients?.data?.companyBlocks; track company) {
                 <a href="#" class="col-3">
                     <img src={{company.image}} alt="Company"/>
                     <div class="client-overlay"><span>{{company.name}}</span></div>
