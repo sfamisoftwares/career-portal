@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  footer = {
+
+    title: "Made with love by",
+    url: "https://www.shapingrain.com",
+    developer: "ShapingRain"
+
+  };
 }
