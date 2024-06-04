@@ -53,5 +53,9 @@ export interface ConfigItem {
             url: string;
             icon: string;
         }[];
+        navBlocks?: {
+            name: string;
+            routerLink: string;
+        }[];
     };
 } 

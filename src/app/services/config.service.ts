@@ -255,7 +255,44 @@ export class ConfigService {
         ]
       }
 
-    }
+    },
+    {
+      id: 10,
+      name: "navigation",
+      data: {
+        title: "",
+        navBlocks: [
+          {
+            name: "Home",
+            routerLink: "/home"
+          },
+          {
+            name: "About",
+            routerLink: "/about"
+          },
+          {
+            name: "Gallery",
+            routerLink: "/gallery"
+          },
+          {
+            name: "Services",
+            routerLink: "/services"
+          },
+          {
+            name: "Testimonials",
+            routerLink: "/testimonials"
+          },
+          {
+            name: "Clients",
+            routerLink: "/clients"
+          },
+          {
+            name: "Pricing",
+            routerLink: "/pricing"
+          }
+        ]
+      }
+    },
   ]
 
   constructor() { }

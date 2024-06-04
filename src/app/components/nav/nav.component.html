@@ -29,7 +29,12 @@
             <!--Main Navigation-->
             <nav id="nav-main">
                 <ul>
-                    <li>
+                    @for (item of navigation?.data?.navBlocks; track item) {
+                        <li>
+                            <a routerLink={{item.routerLink}} routerLinkActive="active" ariaCurrentWhenActive="page">{{item.name}}</a>
+                        </li>
+                    }
+                    <!-- <li>
                         <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
                     </li>
                     <li>
@@ -49,7 +54,7 @@
                     </li>
                     <li>
                         <a routerLink="/pricing" routerLinkActive="active" ariaCurrentWhenActive="page">Pricing</a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
             <!--End of Main Navigation-->
