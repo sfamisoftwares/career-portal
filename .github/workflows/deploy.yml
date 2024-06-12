@@ -22,4 +22,9 @@ jobs:
 
     - name: Sync S3 bucket
       run: |
-        aws s3 sync . s3://www.sfamisoftwares.com --delete
+        aws s3 sync ./dist/browser s3://www.sfamisoftwares.com/ --delete
+        
+    - name: Sync public folder to S3
+      run: |
+        aws s3 sync ./public/assets s3://YOUR_BUCKET_NAME/public/assets --delete
+   
