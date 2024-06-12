@@ -1,5 +1,7 @@
 # Git WorkFlow
 
+A. Guideline
+
 1. Develop should always be ahead or in sync with Main
 2. After a feature has been merged back to develop, and it has been certified. Then we merge Develop back to Main
 
